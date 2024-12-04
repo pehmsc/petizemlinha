@@ -4,44 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - PetizEmLinha</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Conectar com o CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login - PetizEmLinha</h1>
+    <div class="login-page">
+        <div class="login-container">
+            <!-- Logo -->
+            <img src="../assets/logo.png" alt="Logo PetizEmLinha" class="login-logo">
 
-        <!-- Login Cliente -->
-        <div class="login-option">
-            <h2>Login como Cliente</h2>
-            <form id="login-cliente">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <!-- Título -->
+            <h1>Login Cliente</h1>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+            <!-- Formulário de Login -->
+            <form id="login-form">
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Digite sua password">
+                </div>
 
-                <button type="submit">Entrar</button>
+                <button type="submit" class="login-btn">Entrar</button>
             </form>
-            <a href="#" id="recover-password">Recuperar password</a>
-            <a href="#" id="create-account">Criar conta</a>
-        </div>
 
-        <!-- Login Babysitter -->
-        <div class="login-option">
-            <h2>Login como Babysitter</h2>
-            <form id="login-babysitter">
-                <label for="key">Chave:</label>
-                <input type="text" id="key" name="key" required>
-
-                <label for="password-babysitter">Password:</label>
-                <input type="password" id="password-babysitter" name="password-babysitter" required>
-
-                <button type="submit">Entrar</button>
-            </form>
-            <a href="#" id="apply-babysitter">Candidatar-se como Babysitter</a>
+            <!-- Links -->
+            <div class="links">
+                <a href="#">Recuperar Password</a> | 
+                <a href="#">Criar Conta</a>
+            </div>
         </div>
     </div>
 
-    <script src="login/script.js"></script> <!-- Conectar com o JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
