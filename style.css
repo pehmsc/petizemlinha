@@ -15,7 +15,7 @@ body {
 
 /* Tela de carregamento */
 .loading-screen {
-    background-color: #e24f62;
+    background-color: white;
     color: white;
     display: flex;
     justify-content: center;
