@@ -3,43 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Conta - PetizEmLinha</title>
+    <title>Criação de Conta - PetizEmLinha</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="create-account-page">
-        <!-- Logo com link para a página inicial -->
-        <a href="../index.html" class="create-account-logo">
-            <img src="../assets/logo.png" alt="Logo PetizEmLinha">
-        </a>
+    <!-- Logo centralizado -->
+    <img src="../assets/logo.png" alt="Logo PetizEmLinha" class="logo">
 
-        <!-- Formulário de Criação de Conta -->
-        <form id="register-form">
-            <div class="input-container">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Digite seu email">
-            </div>
-            <div class="input-container">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Digite sua password">
-            </div>
-            <div class="input-container">
-                <label for="confirm-password">Confirmar Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua password">
-            </div>
-
-            <!-- Botões lado a lado -->
-            <div class="buttons-container">
-                <button type="submit" class="create-account-btn">Criar Conta</button>
-                <a href="../index.html" class="back-btn">Voltar à Página Inicial</a>
-            </div>
-        </form>
-
-        <!-- Links -->
-        <div class="links">
-            <a href="../login/index.html">Já tem uma conta? Entrar</a>
+    <!-- Formulário de Criação de Conta -->
+    <form id="register-form">
+        <div class="input-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu email">
         </div>
-    </div>
+        <div class="input-container">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Digite sua password">
+        </div>
+        <div class="input-container">
+            <label for="confirm-password">Confirmar Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua password">
+        </div>
+
+        <!-- Botões -->
+        <div class="button-container">
+            <a href="../index.html" class="back-btn">Voltar à Página Inicial</a>
+            <button type="submit" class="submit-btn">Criar Conta</button>
+        </div>
+    </form>
 
     <script src="script.js"></script>
 </body>
