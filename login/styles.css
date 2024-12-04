@@ -16,20 +16,18 @@ body {
     margin: 0;
 }
 
-/* Página de Login */
-.login-page {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: #f9f9f9; /* Fundo ligeiramente cinza */
-    text-align: center;
-}
-
+/* Logo */
 .login-logo {
     width: 250px;
     margin-bottom: 20px;
+}
+
+/* Formulário de Login */
+#login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
 }
 
 .input-container {
@@ -114,10 +112,6 @@ body {
 
 /* Responsividade */
 @media (max-width: 500px) {
-    .login-page {
-        padding: 15px;
-    }
-
     .login-logo {
         width: 200px;
     }
