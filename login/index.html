@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PetizEmLinha</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Conectar com o CSS -->
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login - PetizEmLinha</h1>
+
+        <!-- Login Cliente -->
+        <div class="login-option">
+            <h2>Login como Cliente</h2>
+            <form id="login-cliente">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <a href="#" id="recover-password">Recuperar password</a>
+            <a href="#" id="create-account">Criar conta</a>
+        </div>
+
+        <!-- Login Babysitter -->
+        <div class="login-option">
+            <h2>Login como Babysitter</h2>
+            <form id="login-babysitter">
+                <label for="key">Chave:</label>
+                <input type="text" id="key" name="key" required>
+
+                <label for="password-babysitter">Password:</label>
+                <input type="password" id="password-babysitter" name="password-babysitter" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <a href="#" id="apply-babysitter">Candidatar-se como Babysitter</a>
+        </div>
+    </div>
+
+    <script src="login/script.js"></script> <!-- Conectar com o JavaScript -->
+</body>
+</html>

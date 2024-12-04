@@ -1,0 +1,82 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Tela de carregamento */
+.loading-screen {
+    background-color: #e24f62;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    animation: fadeOut 2s forwards;
+    animation-delay: 3s;
+}
+
+.loading-screen img {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Página principal */
+.main-page {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-page.active {
+    display: flex;
+}
+
+.main-page img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.main-page .tagline {
+    background-color: #fbe3b5;
+    color: #333;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.main-page button {
+    background-color: #e24f62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main-page button:hover {
+    background-color: #c74354;
+}
