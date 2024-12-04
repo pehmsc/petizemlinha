@@ -8,18 +8,18 @@
 </head>
 <body>
     <div class="login-page">
-        <!-- Logo no centro -->
+        <!-- Logo no topo -->
         <img src="../assets/logo.png" alt="Logo PetizEmLinha" class="login-logo">
 
         <!-- Formulário de Login -->
         <form id="login-form">
             <div class="input-container">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                <input type="email" id="email" name="email" required placeholder="Digite o seu email">
             </div>
             <div class="input-container">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Digite sua password">
+                <input type="password" id="password" name="password" required placeholder="Digite a sua password">
             </div>
 
             <button type="submit" class="login-btn">Entrar</button>
@@ -27,13 +27,13 @@
 
         <!-- Links -->
         <div class="links">
-            <a href="#">Recuperar Password</a> | 
-            <a href="#">Criar Conta</a>
+            <a href="#" onclick="recoverPassword()">Recuperar Password</a> | 
+            <a href="#" onclick="goToRegister()">Criar Conta</a>
         </div>
 
         <!-- Botão para voltar à página inicial -->
         <div class="back-link">
-            <a href="../index.html" class="back-btn">Voltar à Página Inicial</a>
+            <button onclick="goBack()" class="back-btn">Voltar à Página Inicial</button>
         </div>
     </div>
 
