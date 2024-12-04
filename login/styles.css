@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;  /* Fundo completamente branco */
+    background-color: #fff;  /* Fundo branco */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,10 @@ body {
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    text-align: center;
-    background-color: #fff; /* Fundo branco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    background-color: #fff; /* Alterado para fundo branco */
+    text-align: center;
 }
 
 .login-logo {
