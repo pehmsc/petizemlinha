@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Conta - Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" alt="Logo PetizEmLinha" class="logo">
+        <button class="back-button" onclick="goBack()">Voltar à Página Inicial</button>
+    </header>
+    <main>
+        <h1>Criação de Conta</h1>
+        <form id="register-form">
+            <div class="input-container">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Digite o seu nome completo">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite o seu email">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Crie uma password">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="confirm-password">Confirmação de Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme a sua password">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="phone">Número de Telefone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Digite o seu número de telefone">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="postal-code">Código Postal:</label>
+                <input type="text" id="postal-code" name="postal-code" required placeholder="Digite o código postal">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city" required placeholder="Digite a sua cidade">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="children">Número de Filhos:</label>
+                <input type="number" id="children" name="children" min="0" placeholder="Digite o número de filhos">
+                <span class="error-message"></span>
+            </div>
+
+            <button type="submit" class="submit-button">Criar Conta</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
