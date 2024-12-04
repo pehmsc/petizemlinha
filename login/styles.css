@@ -27,11 +27,6 @@ body {
     margin-bottom: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #e24f62;
-}
-
 .input-container {
     margin-bottom: 15px;
     text-align: left;
@@ -80,4 +75,23 @@ h1 {
 
 .links a:hover {
     text-decoration: underline;
+}
+
+/* Estilo do botão de voltar à página inicial */
+.back-link {
+    margin-top: 20px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #e24f62;
+    font-size: 16px;
+    border: 2px solid #e24f62;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #e24f62;
+    color: white;
 }
